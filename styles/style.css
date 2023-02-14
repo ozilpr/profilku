@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Balsamiq+Sans:wght@400;700&family=Montserrat:wght@600;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Balsamiq Sans", cursive;
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #017dff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  top: 0;
+  transition: top 0.3s;
+}
+
+div h1 {
+  font-family: "Averia Sans Libre", cursive;
+  color: #1a120b;
+  width: 100%;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #192e35;
+  text-decoration: none;
+  padding: 0.7em;
+  border-radius: 1.5em;
+  border: none;
+  font-weight: 900;
+  margin: 0 1em;
+  transition: all 0.1s ease-in-out;
+}
+
+nav li a:hover {
+  background-color: #192e35;
+  color: #97c0fe;
+}
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-toggle img {
+  width: 1.5rem;
+  transition: 300ms all ease;
+}
+
+.nav-toggle:hover img {
+  opacity: 0.6;
+}
+
+.open {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+color-palet {
+  color: #64a4fe;
+  color: #017dff;
+  color: #97c0fe;
+  color: #ededec;
+  color: #192e35;
+}
+
+.home {
+  padding-top: 5em;
+}
+
+main {
+  margin: 50px 0;
+  display: flex;
+  padding: 20px;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  flex-flow: column nowrap;
+  gap: 0.4rem 0.2rem;
+}
+
+.border {
+  color: #192e35;
+  background-color: #ededec;
+  border-top: 0.1em solid #3c2a21;
+  border-bottom: 0.1em solid #3c2a21;
+  border-radius: 1em;
+  padding: 0.2em;
+}
+
+article h2,
+h3,
+aside {
+  text-align: center;
+}
+
+.active,
+.active:hover {
+  background-color: #97c0fe;
+  color: #1a120b;
+}
+
+article h3,
+aside h3 {
+  background-color: #017dff;
+  color: #e5e5cb;
+  padding: 0.4em 2em;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 2em;
+}
+
+#about {
+  padding-top: 40px;
+  margin-bottom: -40px;
+}
+#about p {
+  text-align: justify;
+}
+
+#others {
+  padding-top: 40px;
+  margin-bottom: -40px;
+}
+
+.card {
+  background-color: #97c0fe;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: 0.1em solid #1a120b;
+  border-radius: 0.5em;
+  box-shadow: 0px 2px 8px 2px #1a120b;
+}
+
+.skills {
+  margin-top: 3em;
+}
+
+.bungkus {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+}
+
+.bungkus li {
+  margin: 1em 1em;
+  width: 40%;
+  padding: 0.1em 0.2em;
+  border: 0.1em solid #1a120b;
+  background-color: #e5e5cb;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.bungkus li:hover {
+  transform: scale(1.1);
+}
+
+.sm-card {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  max-width: 45%;
+  min-width: 10em;
+}
+
+.sm-card img {
+  height: 2em;
+  width: fit-content;
+  padding: 0.1em 0.2em;
+}
+
+.hobbies {
+  margin-top: 3em;
+}
+
+aside {
+  flex: 2;
+  height: fit-content;
+}
+
+aside img {
+  border-radius: 50%;
+}
+
+#profile {
+  padding-top: 40px;
+}
+
+#profile table {
+  text-align: left;
+  margin: 1em 0.2em;
+}
+
+#profile img {
+  width: 200px;
+}
+
+#profile a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  text-align: center;
+  background-color: #ededec;
+  padding: 0.2em;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
